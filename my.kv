@@ -1,0 +1,39 @@
+
+
+<ContainerApp>:
+    rows: 1
+    Label:
+        text: 'Лошпек'
+
+
+
+
+
+<Container>:
+    background_color: .8, .8, 0, 1
+    rows: 4
+    sv: text_input
+    sv1: text_input1
+    TextInput:
+        id: text_input
+        text: '+7'
+        pos_hint: {'center_x': 0.5, 'center_y': 0.55}
+        size: 340, 60
+        size_hint: None, None
+        multiline: False
+    Label:
+        text: 'Регистрация'
+        pos_hint: {'center_x': 0.5, 'center_y': 0.60}
+    Label:
+        id: text_input1
+        pos_hint: {'center_x': 0.5, 'center_y': 0.4}
+    Button:
+        text: 'Зарегистрироваться'
+        pos_hint: {'center_x': 0.5, 'center_y': 0.5}
+        size: 340, 60
+        size_hint: None, None
+        background_normal: 'normal.png'
+        background_down: 'down.png'
+        border: 30,30,30,30
+        on_release:
+            root.registration()
