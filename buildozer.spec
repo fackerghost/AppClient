@@ -3,7 +3,7 @@
 # (str) Title of your application
 title = Честный клиент
 # (str) Package name
-package.name = myapp
+package.name = AppClient
 
 # (str) Package domain (needed for android/ios packaging)
 package.domain = org.test
@@ -35,7 +35,7 @@ version = 0.11
 
 # (list) Application requirements
 # comma separated e.g. requirements = sqlite3,kivy
-requirements = python3,kivy
+requirements = python3,kivy==2.0.0,kivymd,https://github.com/kivymd/kivyMD/archive/3274d62.zip,sdl2_ttf==2.0.15
 
 # (str) Custom source folders for requirements
 # Sets custom source for any requirements with recipes
